@@ -27,9 +27,12 @@ else{
   <div class="my-5 container text-center">
 
     <div class="pb-4"> <span class="text-success">Your TEXT:</span> <h2><?php echo  $full_text ?></h2> </div>
+    
     <div class="pb-4"><span class="text-danger"> Word you REMOVED:</span> <h2><?php echo $to_remove ?></h2> </div>
-    <h1><span class="text-warning" >FINAL RESULT:</span> <h1><?php echo $final_text ?></h1>  </h1>
-
+    
+    <div><span class="text-warning" >FINAL RESULT:</span> <h1><?php echo $final_text ?></h1>  </div>
+    
+    <span class="mt-5"> Text contains <br> <?php echo strlen($final_text) ?> <br> characters. </span>
   </div>
 </body>
 </html>
